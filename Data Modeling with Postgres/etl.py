@@ -7,6 +7,11 @@ from sql_queries import *
 
 
 def process_song_file(cur, filepath):
+    """
+    Takes a filepath to one of the song_data JSON files.
+    It then inserts the records into the postgreSQL dimension tables 'songs'
+    and 'artists'
+    """
     # open song file
     df = pd.read_json(filepath, lines=True)
 
@@ -22,6 +27,11 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    """
+    Takes a filepath to a log file and converts the JSON log file to a pandas dataframe.
+    It then iterates through the dataframe and inserts records into the postgreSQL 'times' and 'users' dimension tables, 
+    as well as the 'songplays' fact table.
+    """
     # open log file
     df = pd.read_json(filepath, lines=True)
 
@@ -66,6 +76,11 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
+    """
+    Recursively finds all files contained within the given filepath.
+    For each file found it calls the function specified by the parameter 'func' (either 'process_song_file' or 'process_log_file'),
+    with the file as the function's parameter
+    """
     # get all files matching extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):
@@ -85,6 +100,10 @@ def process_data(cur, conn, filepath, func):
 
 
 def main():
+    """
+    Establishes a connection with the sparkify database.
+    It then calls 'process_data' on both the song_data and log_data directories
+    """
     conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student")
     cur = conn.cursor()
 
