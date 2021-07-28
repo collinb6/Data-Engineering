@@ -11,10 +11,10 @@ Analysts at Sparkify cannot easily analyse the data in this format. The goal of 
 # Database schema
 I create a star schema database, consisting of a single fact table and a series of dimension tables.
 
-	* The fact table 'songplays' is derived from log_data - it consists of a chronological list of song plays across all users in the system.
+- The fact table 'songplays' is derived from log_data - it consists of a chronological list of song plays across all users in the system.
 Four dimension tables supplement the fact table. 
-	* The 'artists' and 'songs' dimension tables are derived from song_data. They consists of a list of all artists and songs in the system respectively, with details such as song title, artist name, year of release etc.
-	* The 'time' and 'users' dimension tables are derived from log_data. The 'time' table constists of the timestamps of the records in songplays broken into units such as hour, day, week etc. The 'users' table consists of the users in the app with details such as first and last name, gender, subscription type etc.
+- The 'artists' and 'songs' dimension tables are derived from song_data. They consists of a list of all artists and songs in the system respectively, with details such as song title, artist name, year of release etc.
+- The 'time' and 'users' dimension tables are derived from log_data. The 'time' table constists of the timestamps of the records in songplays broken into units such as hour, day, week etc. The 'users' table consists of the users in the app with details such as first and last name, gender, subscription type etc.
 
 
 # Python Scripts
