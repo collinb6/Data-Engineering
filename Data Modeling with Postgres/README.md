@@ -22,6 +22,6 @@ Four dimension tables supplement the fact table.
 
 ### Python Scripts
 The project has three main scripts that can be run from the command line. 
-'create_tables.py' - creates the database and defines the fact and dimension tables
-'etl.py' - this is the extract/transform/load process, which reads the raw JSON data, and transforms it to our new schema, and inserts records into our fact and dimension tables
-'sql_queries.py' - stores all of the sql queries (create/drop/insert) used by 'create_tables.py' and 'etl.py'. 
+- `create_tables.py` - creates the database and defines the fact and dimension tables
+- `etl.py` - this is the extract/transform/load process, which reads the raw JSON data, and transforms it to our new schema, and inserts records into our fact and dimension tables
+- `sql_queries.py` - stores all of the sql queries (create/drop/insert) used by 'create_tables.py' and 'etl.py'. 
