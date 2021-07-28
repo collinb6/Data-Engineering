@@ -20,6 +20,7 @@ Four dimension tables supplement the fact table.
 - The `time` and `users` dimension tables are derived from log_data. The `time` table constists of the timestamps of the records in songplays broken into units such as hour, day, week etc. The `users` table consists of the users in the app with details such as first and last name, gender, subscription type etc.
 
 ![image info](./diagram.JPG)
+![](./diagram.png?raw=true)
 
 ### Python Scripts
 The project has three main scripts that can be run from the command line. 
