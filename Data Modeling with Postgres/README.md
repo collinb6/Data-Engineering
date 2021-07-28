@@ -1,3 +1,4 @@
+![database-diagram](images/diagram.JPG?raw=true)
 ## Udactity Data Engineer Nanodegree Project: Data Modeling with Postgres
 
 ### Introduction
