@@ -21,6 +21,7 @@ Four dimension tables supplement the fact table.
 
 ![image info](./diagram.JPG)
 ![](./diagram.png?raw=true)
+![](https://raw.githubusercontent.com/collinb6/Data-Engineering/main/Data%20Modeling%20with%20Postgres/diagram.JPG)
 
 ### Python Scripts
 The project has three main scripts that can be run from the command line. 
