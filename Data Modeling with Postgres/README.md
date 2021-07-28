@@ -1,15 +1,16 @@
 # Introduction
 In this project I use PostgreSQL and Python to build an ETL pipeline for a fictional music streaming startup called 'Sparkify'.
 
-Sparkify stores their data in directories containing two types of JSON files:
+Sparkify currently stores all of their data in JSON format.
+There are two types of files:
     log_data: log files of user activity - (such as log-ins, log-outs, song-plays)
     song_data: metadata on the catalogue of songs available in the app
 
-Analysts at Sparkify cannot easily analyse the data in this format. The goal of this project is to create a database schema and ETL pipeline that converts this data into a Postgres database, with tables designed to optimize queries for song play analysis.
+Analysts at Sparkify cannot easily analyse the data in this format. The goal of this project is to create a database schema and ETL pipeline that converts this data into a PostgreSQL database, with tables designed to optimize queries for song play analysis.
 
 
 # Database schema
-I create a star schema database, consisting of a single fact table and a series of dimension tables.
+I create a star schema database, consisting of a single fact table and four of dimension tables.
 
 - The fact table 'songplays' is derived from log_data - it consists of a chronological list of song plays across all users in the system.
 Four dimension tables supplement the fact table. 
