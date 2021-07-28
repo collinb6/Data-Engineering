@@ -1,5 +1,7 @@
 ## Udactity Data Engineer Nanodegree Project: Data Modeling with Postgres
 
+<img src="images/headerlogo.jpg?raw=true">
+
 ### Introduction
 In this project I use PostgreSQL and Python to build an ETL pipeline for a fictional music streaming startup called 'Sparkify'.
 
